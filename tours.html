@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/'
+        crossorigin='anonymous'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div class="navbar navbar-expand-md nav_bg_color fixed-top p-3 px-md-4 mb-3 nav_bg_color box-shadow">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Tours and Travels</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-light" href="index.html">Home</a>
+            <a class="p-2 text-light" href="#">Tour Packages</a>
+            <a class="p-2 text-light" href="booking.html">Ticket Booking</a>
+            <a class="p-2 text-light" href="contact.html">Contact</a>
+        </nav>
+        <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
+    </div>
+
+    <!-- Modal Goes here... -->
+    <div class="modal fade" id="addTrip" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body offset-1">
+                    <div class="row">
+                        <div class="container col-4">
+                            <p>Add Image :</p>
+                        </div>
+                        <div class="container col-6">
+                            <input type="file" name="upload" id="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container col-4">
+                            <p>Trip duration :</p>
+                        </div>
+                        <div class="container col-6">
+                            <input id="" class="form-control" type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="container col-4">
+                            <p>Destination :</p>
+                        </div>
+                        <div class="container col-6">
+                            <input id="" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="container col-4">
+                            <p>Cost per Person :</p>
+                        </div>
+                        <div class="container col-6">
+                            <input id="" class="form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-success">Add..</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- main content cards with col-4-->
+    <div class="tours-cards container">
+        <a class="btn btn-danger float-right mr-4 mb-3">
+            <span class="fa fa-plus-circle" style="color:white;" data-toggle="modal" data-target="#addTrip">
+                Add Trip</span>
+        </a>
+        <div class="row container-fluid tours-cards-items">
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container-fluid tours-cards-items">
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row container-fluid tours-cards-items">
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                        alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="images/1.jpg"
+                        data-holder-rendered="true">
+                    <div class="card-body">
+                        <p class="card-text">
+                            <i class="fas fa-clock"></i><span class="text">days and 2 Nights</span><br>
+                            <i class="fas fa-plane-departure"></i><span class="text">Ooty - Conoor</span>
+                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-info">Book Now</button>
+                            </div>
+                            <small class="badge"><i class="fas fa-rupee-sign"></i> 2500 / person</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright text-center py-3">© 2019 Copyright:
+            <a href="#"> noelsasi</a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

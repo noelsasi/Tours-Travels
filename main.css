@@ -1,0 +1,259 @@
+.text{
+    margin-left: 8%;
+}
+.hr-sect {
+	display: flex;
+	flex-basis: 100%;
+	align-items: center;
+	margin: 3% 0%;
+}
+
+.hr-sect::before,
+.hr-sect::after {
+	content: "";
+	flex-grow: 1;
+	background: rgba(0, 0, 0, 0.35);
+	height: 1px;
+	font-size: 0px;
+	line-height: 0px;
+	margin: 0px 8px;
+}
+.after-navigation{
+    width: 80%;
+    margin: 0 auto;
+}
+.about-section{
+	margin-top: 5%;
+}
+footer{
+	line-height: 3;
+	height: 8%;
+}
+@media screen and (max-width: 600px) {
+    .after-navigation{
+    width: 100%;
+    margin: 0 auto;
+	}
+	.image-titles{
+		display: none;
+	}
+}
+.badge{
+    background-color: #ABB2B9;
+}
+.carousel{
+	margin-top:-1.5%;
+}
+#map {
+	height: 100%;
+	width: 100%; 
+   }
+.tours-cards{
+	 margin-top: 10%
+}
+.tours-cards-items{
+	margin: 0 auto;
+}
+.main-content-body{
+	margin-left: 4%;
+}
+html, body {
+   width: 100%;
+   height: 100%;
+   margin: 0;
+ }
+   
+   body {
+	   font-family:'Lato', sans-serif !important;
+	   margin-top: 4%;
+   }
+   
+   .container-fluid {
+	   padding-right: 0px !important;
+	   padding-left: 0px !important;
+   }
+   #myPageContent, section { 
+	   height:100% !important; 
+	   width:100% !important;
+   }
+   
+   
+   /* Slider */
+   #textSlider.row {
+	   position: absolute;
+	   top: 30%;
+	   left: 50%;
+	   transform: translate(-50%, -50%);
+	   width: 100% !important;
+   }
+   #textSlider div {
+	   color: white;
+	   font-family: 'Lato', sans-serif;
+	   text-transform: uppercase;
+   }
+   .nav_bg_color{
+	   background-color: #1B4F72;
+	   color: white;
+ }
+ 
+   .iamCol {
+	   text-align: right;
+	   float: left;
+	   font-weight: 300;
+	   font-size:30pt;
+   }
+   .iamCol p:nth-child(2) { margin-top: -20pt !important; }
+   .slideCol {
+	   text-align: left;
+	   overflow: hidden;
+	   font-weight: 800;
+	   font-size:35pt;
+	   display: block;
+	   white-space: nowrap;
+   }
+   .slideCol p { margin: 0px !important; }
+   
+   .scroller {
+	  height: 70pt;
+	  line-height: 70pt;
+	  overflow: hidden;
+   }
+   .scroller .inner { animation: 10s normal infinite running scroll; }
+   @keyframes scroll {
+	  0%  	{margin-top: 0px;}
+	  15% 	{margin-top: 0px;}
+   
+	  25%  {margin-top: -70pt;}
+	  40%  {margin-top: -70pt;}
+	  
+	  50%  {margin-top: -140pt;}
+	  65%  {margin-top: -140pt;}
+   
+	  75%  {margin-top: -210pt;}
+	  90%  {margin-top: -210pt;}
+   
+	  100% {margin-top: 0px;}
+   }
+   
+   .section-2{
+	   background-color: white;
+   }
+   
+   .background-text{
+	background-color: cornflowerblue;
+	margin-top: -17px;
+	height: 40%;
+	width: 100%;
+   }
+
+   .bg-color{
+	   background-color: cornflowerblue;
+   }
+   .booking-card{
+	   padding: 5% 0% 5% 15%;
+   }
+
+   /* Sidebar css */
+
+   .sidebar {
+	margin: 0;
+	padding-top: 10%;
+	width: 200px;
+	background-color: #f1f1f1;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+  }
+  
+  .sidebar a {
+	display: block;
+	color: black;
+	padding: 16px;
+	text-decoration: none;
+  }
+   
+  .sidebar a.active {
+	background-color: cornflowerblue;
+	color: white;
+  }
+  
+  .sidebar a:hover:not(.active) {
+	background-color: white;
+	color: #555;
+  }
+  
+  div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+	.sidebar {
+	  width: 100%;
+	  height: auto;
+	  position: relative;
+	}
+	.sidebar a {float: left;}
+	div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+	.sidebar a {
+	  text-align: center;
+	  float: none;
+	}
+  }
+
+  .blog-body{
+	  background-color: white;
+	  left: 13%;
+	  width: 75%;
+	  position: absolute;
+	  top: 40%;
+	  border-radius: 2% 2% 0 0;
+  }
+
+  .blog-img{
+	  position: relative;
+	  position: fixed;
+  }
+  .margin-left{
+	  margin-left: -4%;
+  }
+  .margin-top{
+	  margin-top: 2%;
+  }
+  
+   /*==========  Mobile First Method  ==========*/
+   
+   /* Custom, iPhone Retina */ 
+   @media only screen and (min-width : 320px) and (max-width : 479px) {
+	   #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+	   .iamCol { text-align: center; font-size:20pt; }
+	   .iamCol p { display: inline !important; }
+	   .slideCol { font-size: 25pt; text-align: center; margin-top: -20px; }
+   }
+   
+   /* Extra Small Devices, Phones */ 
+   @media only screen and (min-width : 480px) and (max-width : 765px) {
+	   #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+	   .iamCol { text-align: center; font-size:25pt; }
+	   .iamCol p { display: inline !important; }
+	   .slideCol { font-size: 38pt; text-align: center; margin-top: -20px; }
+   }
+   
+   /* Small Devices, Tablets */
+   @media only screen and (min-width : 768px) and (max-width : 992px) {
+	   #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+	   .iamCol { text-align: center; font-size:30pt; }
+	   .iamCol p { display: inline !important; }
+	   .slideCol { font-size: 50pt; text-align: center; margin-top: 5px; }
+   }
+   
+   /* Medium Devices, Desktops */
+   @media only screen and (min-width : 992px) and (max-width : 1200px) {
+	   #textSlider.row { margin-right: 0px !important; margin-left: 0px !important; }
+	   .iamCol { text-align: right; font-size:30pt; }
+	   .slideCol { font-size: 55pt; text-align: left; }
+   }
